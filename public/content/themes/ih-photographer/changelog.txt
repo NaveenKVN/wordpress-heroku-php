@@ -1,0 +1,20 @@
+CHANGELOG
+---------
+
+Version 0.99
+
+i) Fixed Fatal Errors.
+ii) Fixed Sanitization Issues Reported by Theme Check.
+
+
+Version 0.98
+
+i) Removed Config.codekit
+ii) Removed rtl.css
+iii) Updated Redux Framework, and Resolved Tracking Issues.
+iv) Fixed a Theme Check Issue.
+
+Version 0.9
+
+i) Initial Release.
+
