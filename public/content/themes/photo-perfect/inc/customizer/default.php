@@ -16,11 +16,10 @@ if ( ! function_exists( 'photo_perfect_get_default_theme_options' ) ) :
 		$defaults = array();
 
 		// Header.
+		$defaults['site_logo']              = '';
 		$defaults['show_title']             = true;
 		$defaults['show_tagline']           = true;
-		$defaults['header_menu_text']       = esc_html__( 'Menu', 'photo-perfect' );
 		$defaults['show_category_dropdown'] = true;
-		$defaults['header_category_text']   = esc_html__( 'Category', 'photo-perfect' );
 
 		// Search.
 		$defaults['search_placeholder'] = __( 'Search...', 'photo-perfect' );

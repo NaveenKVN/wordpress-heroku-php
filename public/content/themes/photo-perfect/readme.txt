@@ -1,9 +1,11 @@
 === Photo Perfect ===
 
 Contributors: wenthemes
-Requires at least: 4.5
-Tested up to: 4.7
-Stable tag: 1.8.0
+Tags: one-column, two-columns, left-sidebar, right-sidebar, fixed-layout, custom-background, custom-colors, custom-menu, featured-images, full-width-template, sticky-post, translation-ready, responsive-layout, theme-options, threaded-comments
+
+Requires at least: 4.1
+Tested up to: 4.3
+Stable tag: 1.0.4
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -11,7 +13,7 @@ Photography WordPress Theme.
 
 == Description ==
 
-Photo Perfect is a responsive photography WordPress Theme for professional photographer, photo bloggers and creative peeps. Theme is very easy to customize, maintain and use on a daily basis. If you are looking to make a strong online brand presence through their creative and innovative work then this theme is made for you. Official Support Forum: http://themepalace.com/support-forum/ Full Demo: http://wenthemes.com/theme-demos/?demo=photo-perfect
+Photo Perfect is a responsive photography WordPress Theme for professional photographer, photo bloggers and creative peeps. Theme is very easy to customize, maintain and use on a daily basis. If you are looking to make a strong online brand presence through their creative and innovative work then this theme is made for you.
 
 == Installation ==
 
@@ -20,41 +22,6 @@ Photo Perfect is a responsive photography WordPress Theme for professional photo
 3. Click Activate to use your new theme right away.
 
 == Changelog ==
-
-= 1.8.0 - Dec 8 2016 =
-* Custom CSS Migration
-* Compatibility with WP 4.7
-* Remove logo option
-* Update Font Awesome
-* Fix: Minor bug fixes
-
-= 1.7.1 - Aug 23 2016 =
-* Compatibility with WP 4.6
-* Fix: Minor bug fixes
-
-= 1.7 - Jul 27 2016 =
-* Fix pagination issue in search page
-* Update Font Awesome to 4.6.1
-* Minor bug fixes
-
-= 1.6 - Apr 20 2016 =
-* Fix popup image issue
-
-= 1.5 - Apr 15 2016 =
-* Fix refresh issue of custom logo in Customizer
-* Minor bug fixes
-
-= 1.4 - Mar 25 2016 =
-* Add support for Logo for WP >= 4.5
-* Update Font Awesome
-* Add option to change text for menu in header
-* Minor bug fixes
-
-= 1.3 - Dec 29 2015 =
-* Minor bug fixes
-
-= 1.2 - Nov 26 2015 =
-* Minor bug fixes
 
 = 1.0.4 - Nov 04 2015 =
 * Minor bug fixes
@@ -75,7 +42,7 @@ Photo Perfect is a responsive photography WordPress Theme for professional photo
 
 == Credits ==
 
-* Based on Underscores http://underscores.me/, (C) 2012-2016 Automattic, Inc., [GPLv2 or later](https://www.gnu.org/licenses/gpl-2.0.html)
+* Based on Underscores http://underscores.me/, (C) 2012-2015 Automattic, Inc., [GPLv2 or later](https://www.gnu.org/licenses/gpl-2.0.html)
 * normalize.css http://necolas.github.io/normalize.css/, (C) 2012-2015 Nicolas Gallagher and Jonathan Neal, [MIT](http://opensource.org/licenses/MIT)
 * Photobox https://github.com/yairEO/photobox, (C) 2013 Yair Even, [MIT](http://opensource.org/licenses/MIT)
 * Font Awesome http://fortawesome.github.io/Font-Awesome/, [SIL OFL 1.1](http://scripts.sil.org/OFL)

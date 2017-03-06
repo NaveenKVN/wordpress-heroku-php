@@ -122,52 +122,16 @@ if ( ! function_exists( 'photo_perfect_save_theme_settings_meta' ) ) :
 		// Check permission.
 		if ( 'page' === $_POST['post_type'] ) {
 			if ( ! current_user_can( 'edit_page', $post_id ) ) {
-				return;
-			}
+				return; }
 		} else if ( ! current_user_can( 'edit_post', $post_id ) ) {
 			return;
 		}
 
 		if ( ! array_filter( $_POST['theme_settings'] ) ) {
-
 			// No value.
 			delete_post_meta( $post_id, 'theme_settings' );
 		} else {
-			$meta_fields = array(
-				'post_layout' => array(
-					'type' => 'select',
-					),
-				'single_image' => array(
-					'type' => 'select',
-					),
-				'single_image_alignment' => array(
-					'type' => 'select',
-					),
-				);
-
-			$sanitized_values = array();
-
-			foreach ( $_POST['theme_settings'] as $mk => $mv ) {
-
-				if ( isset( $meta_fields[ $mk ]['type'] ) ) {
-
-					switch ( $meta_fields[ $mk ]['type'] ) {
-						case 'select':
-							$sanitized_values[ $mk ] = esc_attr( $mv );
-							break;
-						case 'checkbox':
-							$sanitized_values[ $mk ] = absint( $mv ) > 0 ? 1 : 0;
-							break;
-						default:
-							$sanitized_values[ $mk ] = esc_attr( $mv );
-							break;
-					}
-
-				}
-
-			}
-
-			update_post_meta( $post_id, 'theme_settings', $sanitized_values );
+			update_post_meta( $post_id, 'theme_settings', $_POST['theme_settings'] );
 		}
 
 	}

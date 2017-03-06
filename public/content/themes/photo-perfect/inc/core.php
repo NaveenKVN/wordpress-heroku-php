@@ -33,22 +33,3 @@ if ( ! function_exists( 'photo_perfect_get_option' ) ) :
 	}
 
 endif;
-
-if ( ! function_exists( 'photo_perfect_get_options' ) ) :
-
-	/**
-	 * Get theme options.
-	 *
-	 * @since 1.5
-	 */
-	function photo_perfect_get_options() {
-
-		$value = array();
-
-		$value = get_theme_mod( 'theme_options' );
-
-		return $value;
-
-	}
-
-endif;

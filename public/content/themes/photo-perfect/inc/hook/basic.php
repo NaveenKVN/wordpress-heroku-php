@@ -139,11 +139,6 @@ if ( ! function_exists( 'photo_perfect_custom_body_class' ) ) :
     $site_layout = photo_perfect_get_option( 'site_layout' );
     $input[] = 'site-layout-' . esc_attr( $site_layout );
 
-    // Adds a class of group-blog to blogs with more than 1 published author.
-    if ( is_multi_author() ) {
-    	$input[] = 'group-blog';
-    }
-
     // Archive layout.
     $archive_layout = photo_perfect_get_option( 'archive_layout' );
     $input[] = 'archive-layout-' . esc_attr( $archive_layout );
@@ -170,41 +165,3 @@ if ( ! function_exists( 'photo_perfect_custom_body_class' ) ) :
 endif;
 
 add_filter( 'body_class', 'photo_perfect_custom_body_class' );
-
-if ( ! function_exists( 'photo_perfect_import_custom_css' ) ) :
-
-	/**
-	 * Import Custom CSS.
-	 *
-	 * @since 1.0.5
-	 */
-	function photo_perfect_import_custom_css() {
-
-		// Bail if not WP 4.7.
-		if ( ! function_exists( 'wp_get_custom_css_post' ) ) {
-			return;
-		}
-
-		$custom_css = photo_perfect_get_option( 'custom_css' );
-
-		// Bail if there is no Custom CSS.
-		if ( empty( $custom_css ) ) {
-			return;
-		}
-
-		$core_css = wp_get_custom_css();
-		$return = wp_update_custom_css_post( $core_css . $custom_css );
-
-		if ( ! is_wp_error( $return ) ) {
-
-			// Remove from theme.
-			$options = photo_perfect_get_options();
-			$options['custom_css'] = '';
-			set_theme_mod( 'theme_options', $options );
-		}
-
-	}
-endif;
-
-add_action( 'after_setup_theme', 'photo_perfect_import_custom_css', 99 );
-

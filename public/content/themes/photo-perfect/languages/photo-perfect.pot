@@ -1,0 +1,435 @@
+# Copyright (C) 2015 WEN Themes
+# This file is distributed under the GNU General Public License v2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: photo-perfect\n"
+"POT-Creation-Date: 2015-11-03 15:46+0530\n"
+"PO-Revision-Date: 2015-11-03 15:46+0530\n"
+"Last-Translator: WEN Themes <info@wenthemes.com>\n"
+"Language-Team: \n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;"
+"_n_noop:1,2;_c,_nc:4c,1,2;_x:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2;_ex:1,2c;"
+"esc_attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c\n"
+"X-Poedit-Basepath: .\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 1.5.4\n"
+"X-Poedit-SearchPath-0: ../../photo-perfect\n"
+
+#: ../../photo-perfect/404.php:17
+msgid "404"
+msgstr ""
+
+#: ../../photo-perfect/404.php:18
+msgid "Oops! That page can&rsquo;t be found."
+msgstr ""
+
+#: ../../photo-perfect/404.php:24
+msgid ""
+"It looks like nothing was found at this location. Maybe try one of the links "
+"below or a search?"
+msgstr ""
+
+#: ../../photo-perfect/functions.php:47
+msgid "Primary Menu"
+msgstr ""
+
+#: ../../photo-perfect/functions.php:48
+msgid "Footer Menu"
+msgstr ""
+
+#: ../../photo-perfect/functions.php:49
+msgid "Social Menu"
+msgstr ""
+
+#: ../../photo-perfect/functions.php:50
+msgid "404 Menu"
+msgstr ""
+
+#: ../../photo-perfect/functions.php:130
+msgid "Primary Sidebar"
+msgstr ""
+
+#: ../../photo-perfect/functions.php:132
+msgid "Add widgets here to appear in your Primary Sidebar."
+msgstr ""
+
+#: ../../photo-perfect/functions.php:166
+msgid "expand child menu"
+msgstr ""
+
+#: ../../photo-perfect/functions.php:167
+msgid "collapse child menu"
+msgstr ""
+
+#: ../../photo-perfect/comments.php:31
+#, php-format
+msgctxt "comments title"
+msgid "One thought on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgstr[0] ""
+msgstr[1] ""
+
+#: ../../photo-perfect/comments.php:40 ../../photo-perfect/comments.php:61
+msgid "Comment navigation"
+msgstr ""
+
+#: ../../photo-perfect/comments.php:43 ../../photo-perfect/comments.php:64
+msgid "Older Comments"
+msgstr ""
+
+#: ../../photo-perfect/comments.php:44 ../../photo-perfect/comments.php:65
+msgid "Newer Comments"
+msgstr ""
+
+#: ../../photo-perfect/comments.php:77
+msgid "Comments are closed."
+msgstr ""
+
+#: ../../photo-perfect/inc/template-tags.php:78
+msgid "Add comment"
+msgstr ""
+
+#: ../../photo-perfect/inc/template-tags.php:78
+#: ../../photo-perfect/inc/template-tags.php:107
+msgid "1 Comment"
+msgstr ""
+
+#: ../../photo-perfect/inc/template-tags.php:78
+#: ../../photo-perfect/inc/template-tags.php:107
+msgid "% Comments"
+msgstr ""
+
+#: ../../photo-perfect/inc/template-tags.php:95
+#, php-format
+msgid "Posted in %1$s"
+msgstr ""
+
+#: ../../photo-perfect/inc/template-tags.php:101
+#, php-format
+msgid "Tagged %1$s"
+msgstr ""
+
+#: ../../photo-perfect/inc/template-tags.php:107
+msgid "Leave a comment"
+msgstr ""
+
+#: ../../photo-perfect/inc/template-tags.php:111
+#: ../../photo-perfect/template-parts/content-page.php:33
+msgid "Edit"
+msgstr ""
+
+#: ../../photo-perfect/inc/widgets.php:44
+msgid "Social Icons Widget"
+msgstr ""
+
+#: ../../photo-perfect/inc/widgets.php:46
+msgid "PP: Social"
+msgstr ""
+
+#: ../../photo-perfect/inc/widgets.php:135
+msgid "Title:"
+msgstr ""
+
+#: ../../photo-perfect/inc/widgets.php:141
+msgid ""
+"Social menu is not set. Please create menu and assign it to Social Menu."
+msgstr ""
+
+#: ../../photo-perfect/inc/metabox.php:22
+msgid "Theme Settings"
+msgstr ""
+
+#: ../../photo-perfect/inc/metabox.php:61
+msgid "Choose Layout"
+msgstr ""
+
+#: ../../photo-perfect/inc/metabox.php:63
+#: ../../photo-perfect/inc/metabox.php:75
+#: ../../photo-perfect/inc/metabox.php:87
+msgid "Default"
+msgstr ""
+
+#: ../../photo-perfect/inc/metabox.php:73
+msgid "Choose Image Size in Single Post/Page"
+msgstr ""
+
+#: ../../photo-perfect/inc/metabox.php:85
+msgid "Alignment of Image in Single Post/Page"
+msgstr ""
+
+#: ../../photo-perfect/inc/customizer/default.php:25
+msgid "Search..."
+msgstr ""
+
+#: ../../photo-perfect/inc/customizer/default.php:38
+msgid "Copyright. All rights reserved."
+msgstr ""
+
+#: ../../photo-perfect/inc/customizer/default.php:43
+msgid "Read More"
+msgstr ""
+
+#: ../../photo-perfect/inc/customizer/option.php:8
+msgid "Theme Options"
+msgstr ""
+
+#: ../../photo-perfect/inc/customizer/option.php:17
+msgid "Header Options"
+msgstr ""
+
+#: ../../photo-perfect/inc/customizer/option.php:35
+msgid "Logo"
+msgstr ""
+
+#: ../../photo-perfect/inc/customizer/option.php:36
+#, php-format
+msgid "Recommended size: %dpx x %dpx "
+msgstr ""
+
+#: ../../photo-perfect/inc/customizer/option.php:46
+msgid "Search Options"
+msgstr ""
+
+#: ../../photo-perfect/inc/customizer/option.php:62
+msgid "Show Site Title"
+msgstr ""
+
+#: ../../photo-perfect/inc/customizer/option.php:78
+msgid "Show Tagline"
+msgstr ""
+
+#: ../../photo-perfect/inc/customizer/option.php:94
+msgid "Show Category Dropdown"
+msgstr ""
+
+#: ../../photo-perfect/inc/customizer/option.php:112
+msgid "Search Placeholder"
+msgstr ""
+
+#: ../../photo-perfect/inc/customizer/option.php:122
+msgid "Layout Options"
+msgstr ""
+
+#: ../../photo-perfect/inc/customizer/option.php:139
+msgid "Global Layout"
+msgstr ""
+
+#: ../../photo-perfect/inc/customizer/option.php:156
+msgid "Archive Layout"
+msgstr ""
+
+#: ../../photo-perfect/inc/customizer/option.php:173
+msgid "Image in Single Post/Page"
+msgstr ""
+
+#: ../../photo-perfect/inc/customizer/option.php:190
+msgid "Image Alignment in Single Post/Page"
+msgstr ""
+
+#: ../../photo-perfect/inc/customizer/option.php:201
+msgid "Pagination Options"
+msgstr ""
+
+#: ../../photo-perfect/inc/customizer/option.php:218
+msgid "Pagination Type"
+msgstr ""
+
+#: ../../photo-perfect/inc/customizer/option.php:219
+#, php-format
+msgid "Numeric: Requires %sWP-PageNavi%s plugin"
+msgstr ""
+
+#: ../../photo-perfect/inc/customizer/option.php:230
+msgid "Footer Options"
+msgstr ""
+
+#: ../../photo-perfect/inc/customizer/option.php:247
+msgid "Copyright Text"
+msgstr ""
+
+#: ../../photo-perfect/inc/customizer/option.php:263
+msgid "Show Go To Top"
+msgstr ""
+
+#: ../../photo-perfect/inc/customizer/option.php:273
+msgid "Blog Options"
+msgstr ""
+
+#: ../../photo-perfect/inc/customizer/option.php:290
+msgid "Excerpt Length (words)"
+msgstr ""
+
+#: ../../photo-perfect/inc/customizer/option.php:291
+msgid "Default is 40 words"
+msgstr ""
+
+#: ../../photo-perfect/inc/customizer/option.php:308
+msgid "Read More Text"
+msgstr ""
+
+#: ../../photo-perfect/inc/customizer/option.php:318
+msgid "Advanced Options"
+msgstr ""
+
+#: ../../photo-perfect/inc/customizer/option.php:336
+msgid "Custom CSS"
+msgstr ""
+
+#: ../../photo-perfect/inc/helper/options.php:13
+msgid "Primary Sidebar - Content"
+msgstr ""
+
+#: ../../photo-perfect/inc/helper/options.php:14
+msgid "Content - Primary Sidebar"
+msgstr ""
+
+#: ../../photo-perfect/inc/helper/options.php:15
+msgid "No Sidebar"
+msgstr ""
+
+#: ../../photo-perfect/inc/helper/options.php:34
+msgid "Fluid"
+msgstr ""
+
+#: ../../photo-perfect/inc/helper/options.php:35
+msgid "Boxed"
+msgstr ""
+
+#: ../../photo-perfect/inc/helper/options.php:57
+msgid "Default (Older / Newer Post)"
+msgstr ""
+
+#: ../../photo-perfect/inc/helper/options.php:58
+msgid "Numeric"
+msgstr ""
+
+#: ../../photo-perfect/inc/helper/options.php:76
+msgid "Masonry"
+msgstr ""
+
+#: ../../photo-perfect/inc/helper/options.php:77
+msgid "Post Excerpt"
+msgstr ""
+
+#: ../../photo-perfect/inc/helper/options.php:103
+#: ../../photo-perfect/inc/helper/options.php:135
+msgid "No Image"
+msgstr ""
+
+#: ../../photo-perfect/inc/helper/options.php:108
+msgid "full (original)"
+msgstr ""
+
+#: ../../photo-perfect/inc/helper/options.php:137
+msgid "Thumbnail"
+msgstr ""
+
+#: ../../photo-perfect/inc/helper/options.php:138
+msgid "Medium"
+msgstr ""
+
+#: ../../photo-perfect/inc/helper/options.php:139
+msgid "Large"
+msgstr ""
+
+#: ../../photo-perfect/inc/helper/options.php:140
+msgid "Full"
+msgstr ""
+
+#: ../../photo-perfect/inc/helper/options.php:167
+msgctxt "Alignment"
+msgid "None"
+msgstr ""
+
+#: ../../photo-perfect/inc/helper/options.php:168
+msgctxt "Alignment"
+msgid "Left"
+msgstr ""
+
+#: ../../photo-perfect/inc/helper/options.php:169
+msgctxt "Alignment"
+msgid "Center"
+msgstr ""
+
+#: ../../photo-perfect/inc/helper/options.php:170
+msgctxt "Alignment"
+msgid "Right"
+msgstr ""
+
+#: ../../photo-perfect/inc/support/footer-widgets.php:88
+#, php-format
+msgid "Footer Widget %d"
+msgstr ""
+
+#: ../../photo-perfect/inc/hook/basic.php:14
+#: ../../photo-perfect/inc/hook/basic.php:15
+msgctxt "label"
+msgid "Search for:"
+msgstr ""
+
+#: ../../photo-perfect/inc/hook/basic.php:17
+msgctxt "submit button"
+msgid "Search"
+msgstr ""
+
+#: ../../photo-perfect/inc/hook/custom.php:10
+msgid "Skip to content"
+msgstr ""
+
+#: ../../photo-perfect/inc/hook/custom.php:41
+#, php-format
+msgid "Search Results for: %s"
+msgstr ""
+
+#: ../../photo-perfect/inc/hook/custom.php:147
+msgid "Menu"
+msgstr ""
+
+#: ../../photo-perfect/inc/hook/custom.php:188
+msgid "Category"
+msgstr ""
+
+#: ../../photo-perfect/inc/hook/custom.php:251
+msgid "https://wordpress.org/"
+msgstr ""
+
+#: ../../photo-perfect/inc/hook/custom.php:251
+#, php-format
+msgid "Proudly powered by %s"
+msgstr ""
+
+#: ../../photo-perfect/inc/hook/custom.php:253
+#, php-format
+msgid "Theme: %1$s by %2$s."
+msgstr ""
+
+#: ../../photo-perfect/template-parts/content-none.php:14
+msgid "Nothing Found"
+msgstr ""
+
+#: ../../photo-perfect/template-parts/content-none.php:20
+#, php-format
+msgid ""
+"Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+
+#: ../../photo-perfect/template-parts/content-none.php:24
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
+msgstr ""
+
+#: ../../photo-perfect/template-parts/content-none.php:29
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
+msgstr ""
+
+#: ../../photo-perfect/template-parts/content-page.php:26
+#: ../../photo-perfect/template-parts/content-single.php:26
+msgid "Pages:"
+msgstr ""

@@ -3,17 +3,17 @@
   Theme URI: http://wenthemes.com/item/wordpress-themes/photo-perfect/
   Author: WEN Themes
   Author URI: http://wenthemes.com/
-  Description: Photo Perfect is a responsive photography WordPress Theme for professional photographer, photo bloggers and creative peeps. Theme is very easy to customize, maintain and use on a daily basis. If you are looking to make a strong online brand presence through their creative and innovative work then this theme is made for you. Official Support Forum: http://themepalace.com/support-forum/ Full Demo: http://wenthemes.com/theme-demos/?demo=photo-perfect
-  Version: 1.8.0
+  Description: Photo Perfect is a responsive photography WordPress Theme for professional photographer, photo bloggers and creative peeps. Theme is very easy to customize, maintain and use on a daily basis. If you are looking to make a strong online brand presence through their creative and innovative work then this theme is made for you.
+  Version: 1.0.4
   License: GNU General Public License v2 or later
   License URI: http://www.gnu.org/licenses/gpl-2.0.html
   Text Domain: photo-perfect
-  Tags: one-column, two-columns, left-sidebar, right-sidebar, custom-background, custom-colors, custom-menu, featured-images, full-width-template, sticky-post, translation-ready, theme-options, threaded-comments, footer-widgets, photography
+  Tags: light, white, one-column, two-columns, left-sidebar, right-sidebar, fixed-layout, custom-background, custom-colors, custom-menu, featured-images, full-width-template, sticky-post, translation-ready, responsive-layout, theme-options, threaded-comments
 
   This theme, like WordPress, is licensed under the GPL.
   Use it to make something cool, have fun, and share what you've learned with others.
 
-  This theme is based on Underscores http://underscores.me/, (C) 2012-2015 Automattic, Inc.
+  Photo Perfect is based on Underscores http://underscores.me/, (C) 2012-2015 Automattic, Inc.
   Underscores is distributed under the terms of the GNU GPL v2 or later.
 
   Normalizing styles have been helped along thanks to the fine work of
@@ -488,46 +488,25 @@ p {
     box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.5), inset 0 2px 5px rgba(0, 0, 0, 0.15);
   }
 
-input[type="text"],
-input[type="email"],
-input[type="url"],
-input[type="password"],
-input[type="search"],
-input[type="number"],
-input[type="tel"],
-input[type="range"],
-input[type="date"],
-input[type="month"],
-input[type="week"],
-input[type="time"],
-input[type="datetime"],
-input[type="datetime-local"],
-input[type="color"],
-textarea,
-select{
+  input[type="text"],
+  input[type="email"],
+  input[type="url"],
+  input[type="password"],
+  input[type="search"],
+  textarea,
+  select {
     color: #666;
     border: 1px solid #ccc;
     padding: 5px;
     width: 100%;
   }
 
-
-input[type="text"]:focus,
-input[type="email"]:focus,
-input[type="url"]:focus,
-input[type="password"]:focus,
-input[type="search"]:focus,
-input[type="number"]:focus,
-input[type="tel"]:focus,
-input[type="range"]:focus,
-input[type="date"]:focus,
-input[type="month"]:focus,
-input[type="week"]:focus,
-input[type="time"]:focus,
-input[type="datetime"]:focus,
-input[type="datetime-local"]:focus,
-input[type="color"]:focus,
-textarea:focus {
+  input[type="text"]:focus,
+  input[type="email"]:focus,
+  input[type="url"]:focus,
+  input[type="password"]:focus,
+  input[type="search"]:focus,
+  textarea:focus {
     color: #111;
   }
 
@@ -940,11 +919,9 @@ textarea:focus {
     content: "\f086";
   }
   .entry-meta .posted-on::before,
-  .single-post-meta .posted-on::before {
-    content: "\f133";
-  }
+  .single-post-meta .posted-on::before,
   .entry-footer > .cat-links:before {
-    content: "\f07c";
+    content: "\f133";
   }
   .entry-meta .byline::before,
   .single-post-meta .byline::before {

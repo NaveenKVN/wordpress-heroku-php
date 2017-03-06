@@ -28,13 +28,7 @@ get_header(); ?>
 
 			<?php endwhile; ?>
 
-			<?php
-			/**
-			 * Hook - photo_perfect_action_posts_navigation.
-			 *
-			 * @hooked: photo_perfect_custom_posts_navigation - 10
-			 */
-			do_action( 'photo_perfect_action_posts_navigation' ); ?>
+			<?php the_posts_navigation(); ?>
 
 		<?php else : ?>
 

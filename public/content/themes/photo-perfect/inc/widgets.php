@@ -40,9 +40,8 @@ if ( ! class_exists( 'Photo_Perfect_Social_Widget' ) ) :
 		 */
 		function __construct() {
 			$opts = array(
-				'classname'                   => 'photo_perfect_widget_social',
-				'description'                 => esc_html__( 'Social Icons Widget', 'photo-perfect' ),
-				'customize_selective_refresh' => true,
+				'classname'   => 'photo_perfect_widget_social',
+				'description' => esc_html__( 'Social Icons Widget', 'photo-perfect' ),
 			);
 			parent::__construct( 'photo-perfect-social', esc_html__( 'PP: Social', 'photo-perfect' ), $opts );
 		}

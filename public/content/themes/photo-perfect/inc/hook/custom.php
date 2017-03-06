@@ -30,13 +30,13 @@ if ( ! function_exists( 'photo_perfect_add_separator_title' ) ) :
           </span><!-- .title-tag -->
           <?php
         }
-        elseif( is_archive() ) {
+        elseif( is_archive() ){
           ?>
           <?php the_archive_title( '<h1 class="page-title">', '</h1>' ); ?>
           <?php the_archive_description( '<div class="taxonomy-description">', '</div>' ); ?>
           <?php
         }
-        elseif( is_search() ) {
+        elseif( is_search() ){
           ?>
           <h1 class="page-title"><?php printf( esc_html__( 'Search Results for: %s', 'photo-perfect' ), '<span>' . get_search_query() . '</span>' ); ?></h1>
           <?php
@@ -80,23 +80,26 @@ if( ! function_exists( 'photo_perfect_site_branding' ) ) :
    *
    * @since  Photo Perfect 1.0
    */
-  function photo_perfect_site_branding() {
+  function photo_perfect_site_branding(){
 
     ?>
     <div class="container">
 
       <div class="site-branding">
         <?php
-        if ( function_exists( 'the_custom_logo' ) ) {
-        	echo '<div id="site-logo">';
-	        the_custom_logo();
-        	echo '</div>';
-        }
+          $site_logo = photo_perfect_get_option( 'site_logo' );
+          $site_logo_content = '';
+          if ( ! empty( $site_logo ) ) {
+            $site_logo_content =
+            '<div id="site-logo">'.'<a href="' . esc_url( home_url( '/' ) ) . '"><img src="' . esc_url( $site_logo ) . '" alt="' . esc_attr( get_bloginfo( 'name', 'display' ) ) . '" /></a>'
+            .'</div><!-- #site-logo -->';
+          }
         ?>
+        <?php echo $site_logo_content; ?>
 
         <?php $show_title = photo_perfect_get_option( 'show_title' ); ?>
         <?php $show_tagline = photo_perfect_get_option( 'show_tagline' ); ?>
-        <?php if ( true == $show_title || true == $show_tagline ) : ?>
+        <?php if ( true == $show_title || true == $show_tagline ): ?>
           <div id="site-identity">
             <?php if ( true == $show_title ): ?>
               <?php if ( is_front_page() && is_home() ) : ?>
@@ -104,19 +107,20 @@ if( ! function_exists( 'photo_perfect_site_branding' ) ) :
               <?php else : ?>
                 <p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
               <?php endif; ?>
-            <?php endif; ?>
+            <?php endif ?>
 
-            <?php if ( true == $show_tagline ) : ?>
+            <?php if ( true == $show_tagline ): ?>
               <p class="site-description"><?php bloginfo( 'description' ); ?></p>
-            <?php endif; ?>
+            <?php endif ?>
           </div><!-- #site-identity -->
-        <?php endif; ?>
+        <?php endif ?>
 
       </div><!-- .site-branding -->
 
     </div><!-- .container -->
 
     <?php
+
   }
 
 endif;
@@ -136,12 +140,11 @@ if( ! function_exists( 'photo_perfect_add_primary_navigation' ) ) :
     if ( ! has_nav_menu( 'primary' ) ) {
       return;
     }
-	$header_menu_text = photo_perfect_get_option( 'header_menu_text' );
     ?>
     <div id="main-nav" class="clear-fix">
         <div class="container">
         <nav id="site-navigation" class="header-navigation" role="navigation">
-          <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><span><?php echo esc_html( $header_menu_text ); ?></span>
+          <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><span><?php esc_html_e( 'Menu', 'photo-perfect' ); ?></span>
             <i class="fa fa-align-justify"></i></button>
             <div class="wrap-menu-content">
               <?php
@@ -173,15 +176,16 @@ if( ! function_exists( 'photo_perfect_add_category_navigation' ) ) :
    */
   function photo_perfect_add_category_navigation(){
 
-	$show_category_dropdown = photo_perfect_get_option( 'show_category_dropdown' );
-    if ( true !== $show_category_dropdown ) {
+    $show_category_dropdown = photo_perfect_get_option( 'show_category_dropdown' );
+    if ( true != $show_category_dropdown ) {
       return;
     }
-	$header_category_text   = photo_perfect_get_option( 'header_category_text' );
     ?>
     <div id="category-menu" class="clear-fix header-navigation">
       <div class="container">
-        <button class="nav-list-btn"><i class="fa fa-list"></i><span><?php echo esc_html( $header_category_text ); ?></span></button>
+        <button class="nav-list-btn"><i class="fa fa-list"></i>
+
+<span><?php _e( 'Category', 'photo-perfect' ); ?></span></button>
         <div class="category-list-wrapper">
           <ul>
           <?php wp_list_categories( 'title_li=&depth=1' ); ?>
@@ -246,7 +250,7 @@ if( ! function_exists( 'photo_perfect_footer_copyright' ) ) :
         <div class="site-info">
           <a href="<?php echo esc_url( __( 'https://wordpress.org/', 'photo-perfect' ) ); ?>"><?php printf( esc_html__( 'Proudly powered by %s', 'photo-perfect' ), 'WordPress' ); ?></a>
           <span class="sep"> | </span>
-          <?php printf( esc_html__( '%1$s by %2$s', 'photo-perfect' ), 'Photo Perfect', '<a href="' . esc_url( 'http://wenthemes.com/' ) . '" rel="designer" target="_blank">WEN Themes</a>' ); ?>
+          <?php printf( esc_html__( 'Theme: %1$s by %2$s.', 'photo-perfect' ), 'Photo Perfect', '<a href="http://wenthemes.com/" rel="designer" target="_blank">WEN Themes</a>' ); ?>
         </div><!-- .site-info -->
 
       </div><!-- .footer-right -->
@@ -274,7 +278,7 @@ if( ! function_exists( 'photo_perfect_add_sidebar' ) ) :
 
     $global_layout = photo_perfect_get_option( 'global_layout' );
 
-    // Check if single.
+    // Check if single
     if ( $post && is_singular() ) {
       $post_options = get_post_meta( $post->ID, 'theme_settings', true );
       if ( isset( $post_options['post_layout'] ) && ! empty( $post_options['post_layout'] ) ) {
@@ -282,8 +286,8 @@ if( ! function_exists( 'photo_perfect_add_sidebar' ) ) :
       }
     }
 
-    // Include sidebar.
-    if ( 'no-sidebar' !== $global_layout ) {
+    // Include sidebar
+    if ( 'no-sidebar' != $global_layout ) {
       get_sidebar();
     }
 
@@ -332,7 +336,7 @@ add_action( 'photo_perfect_action_posts_navigation', 'photo_perfect_custom_posts
 if( ! function_exists( 'photo_perfect_add_image_in_single_display' ) ) :
 
   /**
-   * Add image in single post.
+   * Add image in single post
    *
    * @since  Photo Perfect 1.0
    */
@@ -353,7 +357,7 @@ if( ! function_exists( 'photo_perfect_add_image_in_single_display' ) ) :
         $theme_settings_single_image_alignment = photo_perfect_get_option( 'single_image_alignment' );
       }
 
-      if ( 'disable' !== $theme_settings_single_image ) {
+      if ( 'disable' != $theme_settings_single_image ) {
 
       	$featured_image_full_url = wp_get_attachment_url( get_post_thumbnail_id( $post->ID ) );
 
@@ -383,7 +387,7 @@ if( ! function_exists( 'photo_perfect_footer_goto_top' ) ) :
   function photo_perfect_footer_goto_top(){
 
     $go_to_top = photo_perfect_get_option( 'go_to_top' );
-    if ( true !== $go_to_top ) {
+    if ( true != $go_to_top ) {
       return;
     }
     echo '<a href="#page" class="scrollup" id="btn-scrollup"><i class="fa fa-level-up"></i></a>';
@@ -432,10 +436,10 @@ if( ! function_exists( 'photo_perfect_load_archive_loop_content' ) ) :
   function photo_perfect_load_archive_loop_content(){
 
     $archive_layout = photo_perfect_get_option( 'archive_layout' );
-    if ( 'masonry' === $archive_layout ) {
+    if ( 'masonry' == $archive_layout ) {
       get_template_part( 'template-parts/content', 'masonry' );
     }
-    else if ( 'full' === $archive_layout ) {
+    else if ( 'full' == $archive_layout ) {
       get_template_part( 'template-parts/content', 'full' );
     }
     else{

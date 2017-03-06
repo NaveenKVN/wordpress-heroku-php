@@ -21,6 +21,25 @@ $wp_customize->add_section( 'section_header',
   )
 );
 
+// site_logo
+$wp_customize->add_setting( 'theme_options[site_logo]',
+  array(
+    'default'           => $default['site_logo'],
+    'capability'        => 'edit_theme_options',
+    'sanitize_callback' => 'photo_perfect_sanitize_image',
+  )
+);
+$wp_customize->add_control(
+  new WP_Customize_Image_Control( $wp_customize, 'theme_options[site_logo]',
+    array(
+			'label'       => __( 'Logo', 'photo-perfect' ),
+			'description' => sprintf( __( 'Recommended size: %dpx x %dpx ', 'photo-perfect' ), 145, 100 ),
+			'section'     => 'section_header',
+			'settings'    => 'theme_options[site_logo]',
+    )
+  )
+);
+
 // Search Section
 $wp_customize->add_section( 'section_search',
   array(
@@ -62,24 +81,6 @@ $wp_customize->add_control( 'theme_options[show_tagline]',
     'priority' => 100,
   )
 );
-
-// Setting - header_menu_text.
-$wp_customize->add_setting( 'theme_options[header_menu_text]',
-	array(
-		'default'           => $default['header_menu_text'],
-		'capability'        => 'edit_theme_options',
-		'sanitize_callback' => 'sanitize_text_field',
-	)
-);
-$wp_customize->add_control( 'theme_options[header_menu_text]',
-	array(
-		'label'    => esc_html__( 'Menu Text', 'photo-perfect' ),
-		'section'  => 'section_header',
-		'type'     => 'text',
-		'priority' => 100,
-	)
-);
-
 // show_category_dropdown
 $wp_customize->add_setting( 'theme_options[show_category_dropdown]',
   array(
@@ -97,23 +98,6 @@ $wp_customize->add_control( 'theme_options[show_category_dropdown]',
   )
 );
 
-// Setting - header_category_text.
-$wp_customize->add_setting( 'theme_options[header_category_text]',
-	array(
-		'default'           => $default['header_category_text'],
-		'capability'        => 'edit_theme_options',
-		'sanitize_callback' => 'sanitize_text_field',
-	)
-);
-$wp_customize->add_control( 'theme_options[header_category_text]',
-	array(
-			'label'           => esc_html__( 'Category Text', 'photo-perfect' ),
-			'section'         => 'section_header',
-			'type'            => 'text',
-			'priority'        => 100,
-			'active_callback' => 'photo_perfect_is_category_navigation_active',
-	)
-);
 
 // search_placeholder
 $wp_customize->add_setting( 'theme_options[search_placeholder]',
@@ -232,6 +216,7 @@ $wp_customize->add_setting( 'theme_options[pagination_type]',
 $wp_customize->add_control( 'theme_options[pagination_type]',
   array(
     'label'       => __( 'Pagination Type', 'photo-perfect' ),
+    'description' => sprintf( __( 'Numeric: Requires %sWP-PageNavi%s plugin', 'photo-perfect' ), '<a href="https://wordpress.org/plugins/wp-pagenavi/" target="_blank">','</a>' ),
     'section'     => 'section_pagination',
     'type'        => 'select',
     'choices'     => photo_perfect_get_pagination_type_options(),
