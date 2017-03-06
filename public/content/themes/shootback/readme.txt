@@ -1,1 +1,0 @@
-Follow the instructions from the documentation files. You can find a copy here: http://touchsize.com/shootback-doc
